@@ -68,3 +68,60 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+ <div>
+        
+        <div style={{textAlign:"center"}}> 
+        {/* {JSON.stringify(response)} */}
+            <div style={{display:'flex'}}>
+                {response.validation.msg} in {response.validation.param}
+            </div>
+
+            <h3 style={{textAlign:"center"}}>Student Registration Form</h3>
+            <input type="text" value={data.studentname} name="studentname" onChange={handleInput} placeholder='student name' /><br></br>
+            <input type="text" value={data.fathersname} name="fathersname" onChange={handleInput} placeholder='fathersname' /><br></br>
+            <input type="text " value={data.address} name="address"  onChange={handleInput} placeholder="address" /><br></br>
+            <input type="number " value={data.phoneno} name="phoneno"  onChange={handleInput} placeholder='phoneno ' /><br></br>
+            <input type="text " value={data.collegename} name="schoolname"  onChange={handleInput} placeholder='school name' />school name<br></br>
+
+            <button onClick={submit}>submit</button>
+            
+        </div>
+      
+       
+    </div>
+
+
+
+
+
+    <TextField
+          id="outlined-multiline-flexible"
+          label="Student Name" fullWidth 
+          value={data.studentname} name="studentname" onChange={handleInput} 
+        />
+
+        <TextField
+          id="outlined-multiline-flexible"
+          label="Father's Name"
+          value={data.fathersname} name="fathersname" onChange={handleInput}
+        />
+
+        <TextField
+          id="outlined-multiline-flexible"
+          label="Address"
+          value={data.address} name="address"  onChange={handleInput} 
+        />
+
+        <TextField
+          id="outlined-multiline-flexible"
+          label="Phone No"
+          value={data.phoneno} name="phoneno"  onChange={handleInput}  
+        />
+
+        <TextField
+          id="outlined-multiline-flexible"
+          label="School Name"
+          value={data.collegename} name="schoolname"  onChange={handleInput}  
+        />
